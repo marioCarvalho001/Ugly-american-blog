@@ -11,8 +11,9 @@ a {
   font-family: "Cinzel", sans-serif, Arial, Helvetica, sans-serif;
   color: #dbd8e3;
 }
-img {
-  display: block;
+p,
+a h3 {
+  letter-spacing: 3px;
 }
 
 body {
@@ -21,13 +22,25 @@ body {
   background: #212121;
   justify-content: space-between;
 }
-
+.secao_personagem {
+  height: 800px;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+.menu_icone_perfil {
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
 /*header*/
 
 .titulo_header {
+  padding: 100px;
   text-align: center;
-  margin: 100px auto;
-  font-size: 3em;
+  font-size: 5em;
 }
 .menu_icones {
   margin: 0 auto;
@@ -37,17 +50,76 @@ body {
 }
 .menu_icones a {
   text-align: center;
+  font-size: 20px;
+  font-weight: bold;
 }
-
 .menu_icones a img {
   background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  display: flex;
 }
-
 .menu_icones a:nth-of-type(2n + 1) {
   padding-top: 50px;
+}
+
+/*descrição dos personagens*/
+.secao_conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.imagens_perfil_menu a img {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+.imagens_perfil_menu {
+  margin-bottom: 5px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.imagens_perfil_menu h2 {
+  font-size: 2em;
+  padding: 15px 0;
+}
+
+.container_de_personagem {
+  display: flex;
+  height: 550px;
+  background: #423f3e;
+}
+/*container de informação*/
+.perfil {
+  max-width: 240px;
+  max-height: 240px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+/*box-sizing para não quebrar o tamanho da caixa*/
+.caracteristicas,
+p {
+  width: 280px;
+  max-height: 240px;
+  padding: 20px;
+  box-sizing: border-box;
+  line-height: 1em;
+}
+
+.descrição {
+  padding: 20px;
+  max-height: 380px;
+}
+.video {
 }
