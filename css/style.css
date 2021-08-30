@@ -10,32 +10,41 @@ a {
   padding: 0;
   font-family: "Cinzel", sans-serif, Arial, Helvetica, sans-serif;
   color: #dbd8e3;
+  list-style-type: none;
 }
+
 p,
 a h3 {
   letter-spacing: 3px;
 }
+img {
+  display: block;
+  max-width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
 
 body {
-  max-width: 960px;
-  margin: 0 auto;
   background: #212121;
-  justify-content: space-between;
+  margin: 0 auto;
 }
+
+/*header*/
 .secao_personagem {
   height: 800px;
+  margin: 0 auto;
   padding: 0 30px;
-  box-sizing: border-box;
 }
 .menu_icone_perfil {
   display: flex;
+  flex-wrap: wrap;
   background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;
   width: 200px;
   height: 200px;
 }
-/*header*/
 
 .titulo_header {
   padding: 100px;
@@ -43,15 +52,19 @@ body {
   font-size: 5em;
 }
 .menu_icones {
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 30px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-.menu_icones a {
+.menu_icones li {
+  margin: 0 auto;
   text-align: center;
   font-size: 20px;
   font-weight: bold;
+  display: block;
 }
 .menu_icones a img {
   background-repeat: no-repeat;
@@ -62,14 +75,15 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5px;
-  display: flex;
 }
-.menu_icones a:nth-of-type(2n + 1) {
+.menu_icones li:nth-of-type(2n + 1) {
   padding-top: 50px;
 }
 
 /*descrição dos personagens*/
 .secao_conteudo {
+  max-width: 960px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
