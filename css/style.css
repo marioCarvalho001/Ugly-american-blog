@@ -1,21 +1,23 @@
 body,
 h1,
 h2,
-p,
 ul,
 li,
-a {
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  font-family: "Cinzel", sans-serif, Arial, Helvetica, sans-serif;
+a,
+p {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Cinzel" Arial, Helvetica, sans-serif;
   color: #dbd8e3;
+}
+body {
+  background: #423f3e;
+}
+ul {
   list-style-type: none;
 }
-
-p,
-a h3 {
-  letter-spacing: 3px;
+a {
+  text-decoration: none;
 }
 img {
   display: block;
@@ -24,48 +26,7 @@ img {
 * {
   box-sizing: border-box;
 }
-
-body {
-  background: #212121;
-  margin: 0 auto;
-}
-
-/*header*/
-.secao_personagem {
-  height: 800px;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-.menu_icone_perfil {
-  display: flex;
-  flex-wrap: wrap;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-}
-
-.titulo_header {
-  padding: 100px;
-  text-align: center;
-  font-size: 5em;
-}
-.menu_icones {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 30px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.menu_icones li {
-  margin: 0 auto;
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  display: block;
-}
+/*estilos padrão do site*/
 .menu_icones a img {
   background-repeat: no-repeat;
   background-position: 50%;
@@ -74,66 +35,77 @@ body {
   height: 100px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5px;
-}
-.menu_icones li:nth-of-type(2n + 1) {
-  padding-top: 50px;
 }
 
-/*descrição dos personagens*/
-.secao_conteudo {
-  max-width: 960px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+@media only screen and (min-width: 570px) {
+  .menu_icones li:nth-of-type(2n + 1) {
+    padding-top: 50px;
+  }
 }
 .imagens_perfil_menu a img {
   background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
 }
-.imagens_perfil_menu {
-  margin-bottom: 5px;
-  padding: 0 30px;
+.perfil img {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+/*Header*/
+header {
+  padding-top: 8em;
+  height: 750px;
+}
+
+.titulo_header {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 5em;
+  flex-wrap: wrap;
+}
+.secao_personagem ul {
+  max-width: 960px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
 }
-.imagens_perfil_menu h2 {
-  font-size: 2em;
-  padding: 15px 0;
+.secao_personagem {
+  margin-top: 8em;
+  padding: 10px;
+}
+.menu_icones ul li img {
+  margin: 5px;
 }
 
-.container_de_personagem {
+/*pagina de personagens*/
+.secao_conteudo {
+  max-width: 960px;
+  height: 750px;
+  margin: 0 auto;
+}
+.secao_personagem {
+  padding: 50px 0;
+}
+.imagens_perfil_menu {
+  max-width: 960px;
+  margin: 0 auto 2px auto;
   display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.bloco_resenha {
+  background: #c4c4c4;
+  max-width: 960px;
   height: 550px;
-  background: #423f3e;
-}
-/*container de informação*/
-.perfil {
-  max-width: 240px;
-  max-height: 240px;
   padding: 20px;
-  box-sizing: border-box;
-}
-/*box-sizing para não quebrar o tamanho da caixa*/
-.caracteristicas,
-p {
-  width: 280px;
-  max-height: 240px;
-  padding: 20px;
-  box-sizing: border-box;
-  line-height: 1em;
-}
-
-.descrição {
-  padding: 20px;
-  max-height: 380px;
-}
-.video {
 }
