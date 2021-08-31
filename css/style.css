@@ -42,6 +42,12 @@ img {
     padding-top: 50px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .titulo_header:nth-of-type(2n + 1) {
+    font-size: 5em;
+  }
+}
+
 .imagens_perfil_menu a img {
   background-repeat: no-repeat;
   background-position: 50%;
@@ -59,16 +65,13 @@ img {
   height: 200px;
 }
 /*Header*/
-header {
-  padding-top: 8em;
-  height: 750px;
-}
 
 .titulo_header {
   max-width: 960px;
   margin: 0 auto;
+  padding-top: 1em;
   text-align: center;
-  font-size: 5em;
+  font-size: 6em;
   flex-wrap: wrap;
 }
 .secao_personagem ul {
@@ -78,6 +81,14 @@ header {
   justify-content: space-between;
   text-align: center;
   flex-wrap: wrap;
+}
+.secao_personagem::after {
+  content: "";
+  display: block;
+  width: 500px;
+  height: 1px;
+  background: #eae9ec;
+  margin: 6em auto 4em auto;
 }
 .secao_personagem {
   margin-top: 8em;
@@ -90,7 +101,6 @@ header {
 /*pagina de personagens*/
 .secao_conteudo {
   max-width: 960px;
-  height: 750px;
   margin: 0 auto;
 }
 .secao_personagem {
@@ -99,9 +109,15 @@ header {
 .imagens_perfil_menu {
   max-width: 960px;
   margin: 0 auto 2px auto;
+  padding: 0 5px;
   display: flex;
   justify-content: space-between;
   text-align: center;
+}
+.imagens_perfil_menu a h2 {
+  font-size: 2.5em;
+  margin-top: 0.5em;
+  letter-spacing: 0.1em;
 }
 .bloco_resenha {
   background: #c4c4c4;
