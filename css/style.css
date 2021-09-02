@@ -26,6 +26,9 @@ img {
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 /*estilos padrão do site*/
 .menu_icones a img {
   background-repeat: no-repeat;
@@ -140,5 +143,28 @@ img {
   height: 550px;
   padding: 20px;
 }
-.video {
+.informacao p {
+  color: #423f3e;
+  margin: 30px auto;
+}
+footer {
+  background: #dbd8e3;
+}
+.footer {
+  margin: 0 auto;
+  width: 960px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.footer a,
+.footer h1 {
+  font-weight: bold;
+  color: #423f3e;
+}
+.footer a {
+  padding-top: 10px;
+}
+.contatos {
+  padding: 20px;
 }
